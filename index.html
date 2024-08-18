@@ -13,7 +13,7 @@
         <nav>
             <a href="#" class="active">Home</a>
             <a href="about.html">About</a>
-            <a href="#">Services</a>
+            <a href="#">Work</a>
             <a href="#">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -31,7 +31,7 @@
                     I have successfully enhanced the UI for over 10,000 users during my internship at Charge Health and developed robust applications using languages such as Dart, C++, and Python.
                     I am passionate about leveraging technology to solve complex problems efficiently and have a proven track record of delivering impactful and innovative solutions.</p>
                 <span class="btn-box">
-                    <button type="button" class="btn">Download resume</button>
+                    <button id="downloadBtn" class="btn">Download Resume</button>
                     <!-- Updated Contact Me button to link to the contact.html page -->
                     <button type="button" class="btn" onclick="location.href='contact.html'">Contact Me</button>
                 </span>
@@ -49,5 +49,15 @@
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'Levin_Michael_Resume.pdf'; // Replace with the actual resume path
+            link.download = 'Levin_Michael_Resume.pdf'; // Desired file name
+            document.body.appendChild(link); // Append to the body
+            link.click(); // Trigger the click
+            document.body.removeChild(link); // Remove from the DOM
+        });
+    </script>
 </body>
 </html>
