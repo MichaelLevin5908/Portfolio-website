@@ -8,7 +8,7 @@
 }
 .Home{
     min-height: 100vh;
-    background-color: #17222e;
+    background-color: #eaf4ff; /* Light blue background for a friendly feel */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    color: white;
+    color: #333; /* Darker text color for contrast */
     font-size: 22px;
     display: flex;
     justify-content: space-between;
@@ -33,17 +33,17 @@ header{
 }
 header nav a{
     margin-left: 75px;
-    color: white;
+    color: #333; /* Darker text color for contrast */
     font-size: 24px;
     transition: .3s;
 }
 header nav .active,
 header nav a:hover{
-    color: #31ffcc;
+    color: #1e90ff; /* Soft blue color */
 }
 .content-box{
     width: 50%;
-    color: white;
+    color: #333; /* Darker text color for contrast */
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
@@ -68,24 +68,26 @@ header nav a:hover{
     animation-delay: .8s;
 }
 .text-box .skills{
-    color: #31ffcc;
+    color: #1e90ff; /* Soft blue color */
 }
 .text-box p{
     margin: 35px 0;
     font-size: 20px;
-    color: #979797;
+    color: #555; /* Softer gray for text */
     animation: to_right 1s ease forwards .9s;
 }
 .btn-box{
     display: flex;
     gap: 20px;
 }
+
 .btn{
     position: relative;
     padding: 12px 25px;
     font-size: 22px;
-    border: 2px solid #31ffcc;
-    background: transparent;
+    border: 2px solid #1e90ff; /* Soft blue color */
+    background-color: #1e90ff; /* Set a solid background color */
+    color: white; /* Text color */
     cursor: pointer;
     border-radius: 5px;
     overflow: hidden;
@@ -93,6 +95,7 @@ header nav a:hover{
     z-index: 0;
     animation: to_right 1s ease forwards 1s;
 }
+
 .btn::before{
     content: "";
     position: absolute;
@@ -100,26 +103,35 @@ header nav a:hover{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: #31ffcc;
+    background-color: #1e90ff; /* Match the background color */
     z-index: -1;
     transform-origin: left;
     transition: transform .3s;
 }
-.btn:hover,
+
+.btn:hover{
+    color: white;
+    background-color: #1e90ff; /* Ensure the background stays solid on hover */
+}
+
 .btn:nth-child(2){
     color: white;
+    background-color: #1e90ff; /* Same background as Download resume */
 }
-.btn:hover::before,
-.btn:nth-child(2)::before{
+
+.btn:hover::before{
     transform-origin: right;
     transform: scaleX(0);
 }
+
 .btn:nth-child(2):hover::before{
     transform-origin: left;
     transform: scaleX(1);
 }
+
 .btn:nth-child(2):hover{
-    color: black;
+    color: white;
+    background-color: #1e90ff; /* Solid background color on hover */
 }
 .icon-box{
     display: flex;
@@ -127,9 +139,9 @@ header nav a:hover{
     gap: 50px;
 }
 .icon-box i{
-    color: #31ffcc;
+    color: #1e90ff; /* Soft blue color */
     padding: 8px;
-    border: 2px solid #31ffcc;
+    border: 2px solid #1e90ff; /* Soft blue color */
     font-size: 32px;
     border-radius: 50%;
     cursor: pointer;
@@ -139,8 +151,8 @@ header nav a:hover{
 }
 .icon-box i:hover{
     color: white;
-    background-color: #31ffcc;
-    box-shadow: 0 0 15px #31ffcc;
+    background-color: #1e90ff; /* Soft blue color */
+    box-shadow: 0 0 15px #1e90ff; /* Soft blue color */
 }
 .img{
     position: absolute;
@@ -155,6 +167,109 @@ header nav a:hover{
 .text-box span{
     opacity: 1;
 }
+
+.about {
+    min-height: 100vh;
+    background-color: #f0f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.about .content-box {
+    width: 70%;
+    color: #333;
+}
+
+.about .text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about .text-box p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.contact {
+    min-height: 100vh;
+    background-color: #f0f4ff; /* Slightly different shade of blue to distinguish sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.contact .contact-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increased width */
+    width: 100%;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333; /* Darker text color for contrast */
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text color for contrast */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.contact button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e90ff; /* Soft blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#formResponse {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: green;
+}
+
+
+
 /* keyframes */
 @keyframes to_bottom {
     0%{
