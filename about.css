@@ -75,8 +75,40 @@ header nav a:hover {
 }
 
 /* About Section Styling */
+
+.background{
+    min-height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover; /* Cover ensures the background image covers the entire container */
+    background-attachment: fixed; /* This creates the parallax effect */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Flex direction column to allow content to stack */
+}
+
+.background h1{
+    display: inline-block;
+    font-size: 50px;
+    color: #eaf4ff;
+    margin: 0; /* Remove any default margin */
+}
+
+@keyframes beforeAnimation {
+    0%{
+        width: 0%;
+        transform: translateX(-50%);
+    }
+    100%{
+        width: 100%;
+        transform: translateX(0%);
+    }
+}
+
+
 .About {
-    background-color: #f0f4ff; /* Slightly different shade of blue to distinguish sections */
+    background-color: #eaf4ff; /* Slightly different shade of blue to distinguish sections */
     color: #333;
     padding: 80px 120px; /* Increase padding for better spacing */
     font-size: 18px; /* Slightly larger font for readability */
