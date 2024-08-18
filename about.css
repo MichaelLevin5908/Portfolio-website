@@ -75,24 +75,34 @@ header nav a:hover {
 }
 
 /* About Section Styling */
-
-.background{
+.Home {
     min-height: 100vh;
-    background-image: url('background.jpg');
-    background-size: cover; /* Cover ensures the background image covers the entire container */
-    background-attachment: fixed; /* This creates the parallax effect */
-    background-position: center; /* Center the background image */
+    background-color: #cdfff8;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Flex direction column to allow content to stack */
+    overflow: hidden;
 }
 
-.background h1{
-    display: inline-block;
-    font-size: 50px;
-    color: #eaf4ff;
-    margin: 0; /* Remove any default margin */
+.Home h1 {
+    font-size: 75px;
+    color: white;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.Home img {
+    position: absolute;
+    width: 100%;
+}
+
+.Home .leaf-1, .leaf-2 {
+    top: 0;
+}
+
+.Home .plant {
+    bottom: 0;
 }
 
 @keyframes beforeAnimation {
