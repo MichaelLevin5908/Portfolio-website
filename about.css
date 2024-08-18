@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #eaf4ff; /* Light blue background */
+}
+
+/* Navbar Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px; /* Consistent padding as in style.css */
+    z-index: 99;
+    background: #eaf4ff; /* Light blue background to match other pages */
+    color: #333; /* Darker text color for contrast */
+    opacity: 0;
+    animation: to_bottom 1s ease forwards;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav h1 {
+    font-size: 35px; /* Adjust the font size to match other pages */
+    font-weight: 2000; /* Ensure the font weight matches */
+    color: #333; /* Darker text color for contrast */
+    font-weight: bold;
+}
+
+header nav a {
+    margin-left: 75px;
+    color: #333; /* Darker text color for contrast */
+    font-size: 24px; /* Consistent font size */
+    transition: .3s;
+}
+
+header nav .active,
+header nav a:hover {
+    color: #1e90ff; /* Soft blue color */
+}
+
+/* Banner Image Styling */
+.banner-image {
+    margin-top: 120px; /* Ensure this margin compensates for the navbar height */
+    text-align: center;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* About Section Styling */
+.About {
+    background-color: #f0f4ff; /* Slightly different shade of blue to distinguish sections */
+    color: #333;
+    padding: 80px 120px; /* Increase padding for better spacing */
+    font-size: 18px; /* Slightly larger font for readability */
+    line-height: 1.8; /* Increase line height for better readability */
+    text-align: center; /* Center the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.About h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #1e90ff; /* Soft blue color */
+}
+
+.About p {
+    margin-bottom: 20px;
+    max-width: 800px; /* Limit the width for better readability */
+    color: #555; /* Softer gray for text */
+    text-align: center; /* Center the paragraphs */
+    line-height: 1.6; /* Slightly reduced line-height for a tighter paragraph appearance */
+}
+
+/* Contact Section */
+.contact {
+    min-height: 100vh;
+    background-color: #f0f4ff; /* Slightly different shade of blue to distinguish sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.contact .contact-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increased width */
+    width: 100%;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333; /* Darker text color for contrast */
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text color for contrast */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.contact button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e90ff; /* Soft blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#formResponse {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: green;
+}
+
+/* Keyframes for Animation */
+@keyframes to_bottom {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes to_right {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes to_left {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+

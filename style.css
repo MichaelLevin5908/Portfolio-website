@@ -168,31 +168,6 @@ header nav a:hover{
     opacity: 1;
 }
 
-.about {
-    min-height: 100vh;
-    background-color: #f0f4ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 80px;
-}
-
-.about .content-box {
-    width: 70%;
-    color: #333;
-}
-
-.about .text-box h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.about .text-box p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
 body, html {
     margin: 0;
     padding: 0;
