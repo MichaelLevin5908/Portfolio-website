@@ -247,7 +247,9 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: 50px 80px;
+    z-index: 1; /* Lower the z-index to place it behind other elements */
 }
 
 .contact .contact-container {
@@ -306,6 +308,29 @@ body, html {
     font-size: 1rem;
     text-align: center;
     color: green;
+}
+
+#shapes{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    transform: scale(2);
+    animation: scale 3s ease forwards;
+    filter: hue-rotate(355deg) saturate(9) brightness(0.9); /* Adjusted for a deep blue */
+    z-index: -1; /* Lower the z-index to place it behind other elements */
+    position: fixed; /* Make the shapes fixed in position */
+}
+
+/* keyframes */
+@keyframes scale {
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 /* keyframes */
