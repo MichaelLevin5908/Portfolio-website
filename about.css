@@ -67,6 +67,7 @@ header nav span a {
 header nav span a:hover,
 header nav span a.active {
     color: #1e90ff; /* Soft blue color for hover and active states */
+    text-shadow: 0 0 2px #1e90ff; /* Add a glow effect */
     background-color: #CEFFF8; /* White background on hover */
 }
 
