@@ -370,7 +370,6 @@ body, html {
 .work {
     margin-top: 100px; /* Adjust this value to add more space between navbar and timeline */
     min-height: 100vh;
-    background-image: url(./light.png);
     background-size: 100% 100%;
     background-position: 0 0; /* Default background position */
     animation: work-background 3s linear infinite, work-opacity 3.5s ease forwards;
@@ -380,29 +379,6 @@ body, html {
     position: relative;
     padding: 0 80px;
     overflow: hidden;
-}
-
-/* Animation keyframes */
-@keyframes work-background {
-    0% {
-        background-position: 0 0;
-        filter: hue-rotate(-60deg); /* Shift purple to blue */
-    }
-    100% {
-        background-position: 0 var(--height);
-        filter: hue-rotate(-60deg); /* Shift purple to blue */
-    }
-}
-
-@keyframes work-opacity {
-    0% {
-        opacity: 0;
-        filter: hue-rotate(-60deg); /* Shift purple to blue */
-    }
-    100% {
-        opacity: 1;
-        filter: hue-rotate(-60deg); /* Shift purple to blue */
-    }
 }
 
 .background-animation {
@@ -415,7 +391,7 @@ body, html {
     background-size: 100% 100%;
     background-position: 0 0;
     filter: hue-rotate(-90deg); /* Try a different hue rotation value */
-    animation: work-background 3s linear infinite, work-opacity 3.5s ease forwards;
+    animation: work-background 10s linear infinite, work-opacity 10s ease forwards;
     z-index: -1; /* Ensure it stays behind the content */
     pointer-events: none; /* Ensure it doesn't interfere with user interaction */
 }
