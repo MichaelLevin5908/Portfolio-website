@@ -6,6 +6,8 @@ var typed = new Typed((".skills"),{
     loop : true
 })
 
+document.querySelector(".work").style.setProperty("--height", window.innerHeight + "px");
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 

@@ -20,35 +20,39 @@
     </header>
 
     <section class="work">
+        <!-- New Background Animation Layer -->
+        <div class="background-animation"></div>
+
+        <!-- Timeline Section -->
         <div class="timeline">
             <div class="container left">
                 <div class="content">
-                    <h2> Jul 2024 - Present</h2>
-                    <h3>Software engineering intern at Charge Health</h3>
-                    <p>• Engineered and redesigned the UI in Flutter, enhancing the user experience for 10,000+ users <br>
-                        • Boosted performance and scalability by integrating system components with AWS Lambda and DynamoDB<br>
-                        • Reduced bugs by 30% through comprehensive unit tests in Dart and Python, using Gradle, Mockito, and Moto<br>
-                        • Debugged and optimized functionalities, improving responsiveness and reducing user-reported issues by 25%<br></p>
+                    <h2>Jul 2024 - Present</h2>
+                    <h3>Software Engineering Intern at Charge Health</h3>
+                    <p>• Engineered and redesigned the UI in Flutter, enhancing the user experience for 10,000+ users.<br>
+                       • Boosted performance and scalability by integrating system components with AWS Lambda and DynamoDB.<br>
+                       • Reduced bugs by 30% through comprehensive unit tests in Dart and Python, using Gradle, Mockito, and Moto.<br>
+                       • Debugged and optimized functionalities, improving responsiveness and reducing user-reported issues by 25%.</p>
                 </div>
             </div>
             <div class="container right">
                 <div class="content">
                     <h2>Jul 2022 - Nov 2022</h2>
                     <h3>Technical Recruitment Coordinator at Lanhee Chen Campaign</h3>
-                    <p>• Recruited 30+ interns and managed a volunteer phone banking team that made 100,000+ calls<br>
-                        • Web scraped public school data using Beautiful Soup in Python to gather emails from over 2000 high schools<br>
-                        • Identified key individuals using Pandas and NumPy, and developed an OOP Python script that contacted 4000+
-                        volunteers and school officials, boosting volunteer recruitment by 20%<br>
-                        • Implemented the internship program at 7 schools by setting up and leading meetings with key school officials<p>
+                    <p>• Recruited 30+ interns and managed a volunteer phone banking team that made 100,000+ calls.<br>
+                       • Web scraped public school data using Beautiful Soup in Python to gather emails from over 2000 high schools.<br>
+                       • Identified key individuals using Pandas and NumPy, and developed an OOP Python script that contacted 4000+
+                       volunteers and school officials, boosting volunteer recruitment by 20%.<br>
+                       • Implemented the internship program at 7 schools by setting up and leading meetings with key school officials.</p>
                 </div>
             </div>
             <div class="container left">
                 <div class="content">
                     <h2>2020 - 2022</h2>
-                    <h3>Researcher and Event Manager at Pioneer Academics </h3>
-                    <p>• Organized and facilitated collaborative meetings connecting 100+ students through interdisciplinary projects<br>
-                        • Co-authored an academic research paper with a Vanderbilt professor and presented findings to key officials<br>
-                        • Planned events to connect hundreds of scholars and led groups of ten scholars through the research process</p>
+                    <h3>Researcher and Event Manager at Pioneer Academics</h3>
+                    <p>• Organized and facilitated collaborative meetings connecting 100+ students through interdisciplinary projects.<br>
+                       • Co-authored an academic research paper with a Vanderbilt professor and presented findings to key officials.<br>
+                       • Planned events to connect hundreds of scholars and led groups of ten scholars through the research process.</p>
                 </div>
             </div>
             <div class="timeline-end"></div>
@@ -56,8 +60,17 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let workSection = document.querySelector('.work');
+            workSection.style.setProperty('--height', window.innerHeight + 'px');
+        });
+    </script>
 </body>
 </html>
+
+
+
 
 
 
