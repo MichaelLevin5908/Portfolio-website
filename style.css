@@ -364,30 +364,32 @@ body, html {
         transform: translateX(0);
     }
 }
+.work {
+    margin-top: 100px; /* Adjust this value to add more space between navbar and timeline */
+}
 
-/* Timeline Section */
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 100px auto 0; /* Ensure timeline is below the navbar */
+    margin: 0 auto;
     padding: 50px 0;
     background-color: #CEFFF8;
 }
 
-/* Timeline Line */
+/* Timeline Line - Top */
 .timeline::before {
     content: '';
     position: absolute;
-    width: 50px; /* Adjust the width of the line */
+    width: 50px; /* Width of the top line */
     height: 6px; /* Thickness of the line */
-    background-color: #1e90ff; /* Dodger Blue color for the line */
-    top: 0; /* Align with the top of the timeline */
+    background-color: #1e90ff; /* Dodger Blue color */
+    top: 0; /* Position at the top of the timeline */
     left: 50%;
     transform: translateX(-50%); /* Center the line horizontally */
-    z-index: 2; /* Ensure it appears above the timeline */
+    z-index: 2; /* Ensure it appears above other elements */
 }
 
-/* Timeline Line */
+/* Timeline Line - Vertical */
 .timeline::after {
     content: '';
     position: absolute;
@@ -396,10 +398,23 @@ body, html {
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px;
+    margin-left: -3px; /* Center the line horizontally */
+    z-index: 1; /* Below the horizontal lines */
 }
 
-/* Timeline Container */
+/* Timeline Line - Bottom */
+.timeline-end::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* Width of the bottom line */
+    height: 6px; /* Thickness of the line */
+    background-color: #1e90ff; /* Dodger Blue color */
+    bottom: 0; /* Position at the bottom of the timeline */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line horizontally */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
 .container {
     padding: 10px 40px;
     position: relative;
@@ -407,7 +422,6 @@ body, html {
     width: 50%;
 }
 
-/* Timeline Circles */
 .container::after {
     content: '';
     position: absolute;
@@ -421,17 +435,14 @@ body, html {
     z-index: 1;
 }
 
-/* Left Containers */
 .left {
     left: 0;
 }
 
-/* Right Containers */
 .right {
     left: 50%;
 }
 
-/* Arrows for Left Containers */
 .left::before {
     content: " ";
     height: 0;
@@ -445,7 +456,6 @@ body, html {
     border-color: transparent transparent transparent #1e90ff;
 }
 
-/* Arrows for Right Containers */
 .right::before {
     content: " ";
     height: 0;
@@ -459,12 +469,10 @@ body, html {
     border-color: transparent #1e90ff transparent transparent;
 }
 
-/* Adjust Circle Position for Right Containers */
 .right::after {
     left: -16px;
 }
 
-/* Content Boxes */
 .content {
     padding: 20px 30px;
     background-color: white;
