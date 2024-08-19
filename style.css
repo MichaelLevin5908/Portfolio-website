@@ -375,6 +375,19 @@ body, html {
 }
 
 /* Timeline Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 50px; /* Adjust the width of the line */
+    height: 6px; /* Thickness of the line */
+    background-color: #1e90ff; /* Dodger Blue color for the line */
+    top: 0; /* Align with the top of the timeline */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line horizontally */
+    z-index: 2; /* Ensure it appears above the timeline */
+}
+
+/* Timeline Line */
 .timeline::after {
     content: '';
     position: absolute;
