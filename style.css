@@ -57,6 +57,62 @@ header nav a:hover {
     text-shadow: 0 0 2px #1e90ff; /* Add a glow effect */
 }
 
+.Home, .work, .portfolio {
+    min-height: 100vh;
+    background-color: #CEFFF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 80px;
+    overflow: hidden;
+}
+
+/* Responsive Adjustments */
+
+/* Medium screens (Tablets and small laptops) */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 30px; /* Reduce padding for medium screens */
+    }
+    header nav a {
+        margin-left: 50px; /* Reduce margin between nav links */
+        font-size: 22px; /* Slightly smaller font size */
+    }
+    .Home, .work, .portfolio {
+        padding: 0 60px; /* Reduce padding for content sections */
+    }
+}
+
+/* Small screens (Phones) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px; /* Further reduce padding for smaller screens */
+    }
+    header nav a {
+        margin-left: 30px; /* Reduce margin further */
+        font-size: 20px; /* Smaller font size */
+    }
+    .Home, .work, .portfolio {
+        padding: 0 40px; /* Further reduce padding for content sections */
+    }
+}
+
+/* Extra small screens (Very small phones) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 8px 15px; /* Minimum padding for very small screens */
+    }
+    header nav a {
+        margin-left: 20px; /* Minimum margin between nav links */
+        font-size: 18px; /* Minimum font size */
+    }
+    .Home, .work, .portfolio {
+        padding: 0 20px; /* Minimum padding for content sections */
+    }
+}
+
+
 .content-box {
     width: 50%;
     color: #333;
