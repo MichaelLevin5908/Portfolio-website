@@ -112,17 +112,17 @@ header nav a:hover {
     }
 }
 
-/* Vertical phones (Portrait orientation, max-width 480px) */
+/* Vertical phones (Portrait orientation) */
 @media screen and (max-width: 480px) and (orientation: portrait) {
     header {
-        padding: 10px 15px; /* Simplified padding for small screens */
+        padding: 8px 15px; /* Minimum padding for very small screens */
     }
     header nav a {
-        margin-left: 15px; /* Simplified margin between nav links */
-        font-size: 18px; /* Font size appropriate for small screens */
+        margin-left: 20px; /* Minimum margin between nav links */
+        font-size: 18px; /* Minimum font size */
     }
     .Home, .work, .portfolio {
-        padding: 0 20px; /* Simplified padding for content sections */
+        padding: 0 20px; /* Minimum padding for content sections */
     }
 }
 
@@ -132,7 +132,7 @@ header nav a:hover {
         padding: 5px 10px; /* Minimum padding for the narrowest screens */
     }
     header nav a {
-        margin-left: 10px; /* Minimum margin between nav links */
+        margin-left: 10px; /* Further reduce margin between nav links */
         font-size: 16px; /* Smallest readable font size */
     }
     .Home, .work, .portfolio {
