@@ -71,11 +71,6 @@ header nav a:hover {
 /* Responsive Adjustments */
 
 @media screen and (max-width: 1440px) and (min-width: 1280px) {
-    .Home h1 {
-        visibility: hidden; 
-        font-size: 0; 
-        line-height: 0; 
-    }
 }
 
 /* Medium screens (Tablets and small laptops) */
@@ -132,11 +127,7 @@ header nav a:hover {
     .Home, .work, .portfolio {
         padding: 0 20px; /* Minimum padding for content sections */
     }
-    .Home h1 {
-        visibility: hidden; /* Hide the h1 */
-        font-size: 0; /* Set the font size to zero */
-        line-height: 0; /* Set line-height to zero */
-    }
+
     .face {
         display: none; /* Remove the face image */
     }
