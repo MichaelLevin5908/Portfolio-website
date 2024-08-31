@@ -70,6 +70,53 @@ header nav a:hover {
 
 /* Responsive Adjustments */
 
+/* 13-inch MacBook or similar small laptops */
+@media screen and (max-width: 1440px) {
+    .Home, .work, .portfolio {
+        padding: 0 50px; /* Adjust padding */
+    }
+    header {
+        padding: 20px 50px;
+    }
+    header nav a {
+        margin-left: 40px; /* Adjust spacing */
+        font-size: 20px;
+    }
+}
+
+/* Vertical phones */
+@media screen and (max-width: 480px) {
+    .Home, .work, .portfolio {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 0 20px;
+        text-align: center; /* Center align text */
+    }
+    header {
+        padding: 10px 15px;
+        flex-direction: column; /* Stack header items */
+    }
+    header nav a {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .content-box {
+        width: 100%; /* Full width on small screens */
+    }
+    .text-box h1 {
+        font-size: 28px; /* Smaller font size */
+    }
+    .text-box p {
+        font-size: 16px;
+        width: 100%; /* Full width */
+    }
+    .btn {
+        font-size: 18px; /* Smaller buttons */
+    }
+    .icon-box {
+        justify-content: center; /* Center icons */
+    }
+}
+
 /* Medium screens (Tablets and small laptops) */
 @media screen and (max-width: 1024px) {
     header {
