@@ -70,7 +70,34 @@ header nav a:hover {
 
 /* Responsive Adjustments */
 
-@media screen and (max-width: 1440px) and (min-width: 1280px) {
+@media screen and (max-width: 1440px) {
+    header {
+        padding: 20px 50px;
+    }
+    header nav a {
+        margin-left: 60px;
+        font-size: 22px;
+    }
+    .Home, .work, .portfolio {
+        padding: 0 40px;
+    }
+    .content-box, .portfolio .container {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .text-box h3 {
+        font-size: 28px;
+    }
+    .text-box h1 {
+        font-size: 45px;
+    }
+    .text-box p {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 20px;
+        padding: 10px 25px;
+    }
 }
 
 /* Medium screens (Tablets and small laptops) */
