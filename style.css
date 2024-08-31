@@ -88,34 +88,85 @@ header nav a:hover {
 @media screen and (max-width: 480px) {
     .Home, .work, .portfolio {
         flex-direction: column; /* Stack elements vertically */
-        padding: 0 20px;
+        padding: 0 15px; /* Reduce padding */
         text-align: center; /* Center align text */
     }
+
     header {
-        padding: 10px 15px;
+        padding: 5px 10px; /* Further reduce padding */
         flex-direction: column; /* Stack header items */
     }
+
     header nav a {
-        margin-left: 20px;
-        font-size: 18px;
+        margin-left: 10px; /* Further reduce margin */
+        font-size: 16px; /* Reduce font size */
     }
+
     .content-box {
-        width: 100%; /* Full width on small screens */
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center content */
     }
+
     .text-box h1 {
-        font-size: 28px; /* Smaller font size */
+        font-size: 24px; /* Smaller font size */
     }
+
     .text-box p {
-        font-size: 16px;
+        font-size: 14px; /* Smaller font size */
         width: 100%; /* Full width */
     }
+
     .btn {
-        font-size: 18px; /* Smaller buttons */
+        font-size: 16px; /* Smaller buttons */
+        padding: 10px 20px; /* Adjust button padding */
     }
+
     .icon-box {
         justify-content: center; /* Center icons */
+        gap: 10px; /* Reduce gap between icons */
+    }
+
+    /* Adjust Image Size */
+    .face {
+        max-width: 100%; /* Ensure the image fits within the screen */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 60vh; /* Limit height to 60% of viewport height */
+    }
+
+    .objects {
+        max-width: 80%; /* Reduce width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 40vh; /* Limit height */
+    }
+
+    /* Consider collapsing navbar into a hamburger menu */
+    header nav {
+        display: none; /* Hide original nav links */
+    }
+
+    header .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    /* Hamburger Menu Styles */
+    .hamburger-menu {
+        width: 30px;
+        height: 30px;
+        background-color: #1e90ff; /* Dodger Blue */
+        border-radius: 3px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
     }
 }
+
 
 /* Medium screens (Tablets and small laptops) */
 @media screen and (max-width: 1024px) {
