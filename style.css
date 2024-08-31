@@ -70,6 +70,15 @@ header nav a:hover {
 
 /* Responsive Adjustments */
 
+
+@media screen and (max-width: 1440px) and (min-width: 1280px) {
+    .home-page h1 {
+        visibility: hidden; /* Hide the h1 */
+        font-size: 0; /* Optional: Set the font size to zero */
+        line-height: 0; /* Optional: Set line-height to zero */
+    }
+}
+
 /* Medium screens (Tablets and small laptops) */
 @media screen and (max-width: 1024px) {
     header {
