@@ -70,9 +70,8 @@ header nav a:hover {
 
 /* Responsive Adjustments */
 
-
 @media screen and (max-width: 1440px) and (min-width: 1280px) {
-    .home-page h1 {
+    .Home h1 {
         visibility: hidden; 
         font-size: 0; 
         line-height: 0; 
@@ -133,7 +132,7 @@ header nav a:hover {
     .Home, .work, .portfolio {
         padding: 0 20px; /* Minimum padding for content sections */
     }
-    .home-page h1 {
+    .Home h1 {
         visibility: hidden; /* Hide the h1 */
         font-size: 0; /* Set the font size to zero */
         line-height: 0; /* Set line-height to zero */
@@ -155,7 +154,7 @@ header nav a:hover {
     .Home, .work, .portfolio {
         padding: 0 10px; /* Minimum padding for content sections */
     }
-    .home-page h1 {
+    .Home h1 {
         visibility: hidden; /* Hide the h1 */
         font-size: 0; /* Set the font size to zero */
         line-height: 0; /* Set line-height to zero */
