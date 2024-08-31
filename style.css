@@ -71,15 +71,6 @@ header nav a:hover {
 /* Responsive Adjustments */
 
 @media screen and (max-width: 1440px) and (min-width: 1280px) {
-    body {
-        transform: scale(0.8); /* Scale the entire content to 80% */
-        transform-origin: top left; /* Keep the scaling anchored to the top-left corner */
-    }
-
-    /* Optional: Adjust the container's size to fit the scaled content */
-    header, .Home, .work, .portfolio {
-        width: 125%; /* Compensate for the 80% scale to maintain full-width appearance */
-    }
 }
 
 /* Medium screens (Tablets and small laptops) */
