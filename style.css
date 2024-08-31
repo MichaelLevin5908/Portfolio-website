@@ -73,7 +73,12 @@ header nav a:hover {
     header {
         padding: 20px 30px; /* Reduced padding for better fit */
     }
-
+    
+    header h1
+    {
+        visibility: hidden;
+    }
+    
     /* Navigation link adjustments */
     header nav a {
         margin-left: 40px; /* Slightly reduced margin */
