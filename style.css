@@ -69,9 +69,9 @@ header nav a:hover {
 }
 
 @media screen and (max-width: 1440px) {
-    /* Adjusting header padding for better spacing */
+    
     header {
-        padding: 20px 30px; /* Reduced padding for better fit */
+        padding: 20px 30px; 
     }
     
     header h1
@@ -79,41 +79,41 @@ header nav a:hover {
         visibility: hidden;
     }
     
-    /* Navigation link adjustments */
+    
     header nav a {
-        margin-left: 40px; /* Slightly reduced margin */
-        font-size: 20px; /* Adjusted font size for better scaling */
+        margin-left: 40px; 
+        font-size: 20px; 
     }
 
-    /* Content section padding */
+    
     .Home, .work, .portfolio {
-        padding: 0 30px; /* Reduced padding for more room */
+        padding: 0 30px; 
     }
 
-    /* Content box and container adjustments */
+    
     .content-box, .portfolio .container {
         width: 100%;
-        max-width: 900px; /* Reduced max width for smaller screens */
+        max-width: 900px; 
     }
 
-    /* Heading adjustments */
+    
     .text-box h3 {
-        font-size: 26px; /* Reduced font size for better scaling */
+        font-size: 26px; 
     }
 
     .text-box h1 {
-        font-size: 38px; /* Further reduced font size */
+        font-size: 38px; 
     }
 
-    /* Paragraph text adjustments */
+    
     .text-box p {
-        font-size: 16px; /* Smaller font size for better readability on smaller screens */
+        font-size: 16px; 
     }
 
-    /* Button adjustments */
+    
     .btn {
-        font-size: 18px; /* Slightly smaller font for buttons */
-        padding: 8px 20px; /* Adjusted padding for smaller buttons */
+        font-size: 18px; 
+        padding: 8px 20px; 
     }
 }
 
