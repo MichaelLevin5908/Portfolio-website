@@ -176,6 +176,16 @@ header nav a:hover {
     .face {
         display: none; /* Remove the face image */
     }
+
+    .shapes
+    {
+        display: none;
+    }
+    
+    .objects
+    {
+        display: none;
+    }
 }
 
 /* Vertical phones (Portrait orientation, max-width 320px) */
