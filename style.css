@@ -839,3 +839,33 @@ body, html {
     font-size: 20px; /* Size of the GitHub icon */
     color: white; /* Icon color */
 }
+
+/* YouTube Button Styling */
+.youtube-button {
+    display: inline-block;
+    z-index: 10;
+}
+
+.youtube-button a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    background-color: #FF0000; /* YouTube Red */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.youtube-button a:hover {
+    box-shadow: 0 0 15px #FF0000;
+}
+
+.youtube-button i {
+    font-size: 20px;
+    color: white;
+}
