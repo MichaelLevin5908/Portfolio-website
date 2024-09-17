@@ -825,6 +825,21 @@ body, html {
     color: #777777; /* Lighter grey for paragraph text */
 }
 
+/* Icon and text styling: bigger icons next to text */
+.icons {
+    display: flex;
+    flex-wrap: wrap; /* Wrap icons to next line if necessary */
+    align-items: center; /* Vertically align icons and text */
+    gap: 15px; /* Space between icons and text */
+    margin-top: 10px; /* Add spacing above the icons */
+}
+
+.icons i {
+    font-size: 2rem; /* Larger icon size */
+    margin-right: 10px; /* Space between icon and text */
+    display: inline-block;
+}
+
 /* GitHub Button Styling for Portfolio Items */
 .github-button {
     display: inline-block;
