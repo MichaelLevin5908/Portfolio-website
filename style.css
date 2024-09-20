@@ -789,6 +789,82 @@ body, html {
     }
 }
 
+/* General Portfolio Section Styling and animations */
+.portfolio {
+    margin-top: 100px;
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    animation: portfolio-opacity 2.5s ease forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 80px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* First background animation layer for fast-moving "rain" */
+.background-animation-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./rain-pattern.png); /* Use a small rain-like pattern */
+    background-size: 50px 50px; /* Adjust this size to make it look like rain droplets */
+    background-position: 0 0;
+    animation: rain-effect-1 3s linear infinite;
+    z-index: -2; /* Behind content but above the second layer */
+    pointer-events: none;
+}
+
+/* Second background animation layer for slower-moving "rain" */
+.background-animation-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./rain-pattern.png); /* Same rain-like pattern */
+    background-size: 50px 50px;
+    background-position: 0 0;
+    animation: rain-effect-2 5s linear infinite;
+    z-index: -3; /* Behind the first animation */
+    opacity: 0.5; /* Make it slightly transparent for layering effect */
+    pointer-events: none;
+}
+
+/* Faster moving rain layer */
+@keyframes rain-effect-1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 200%;
+    }
+}
+
+/* Slower moving rain layer */
+@keyframes rain-effect-2 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 300%;
+    }
+}
+
+@keyframes portfolio-opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Portfolio Section Container Styling */
 .portfolio .container {
     width: 100%;
@@ -801,8 +877,8 @@ body, html {
     z-index: 3;
     perspective: 1000px;
     display: flex;
-    flex-direction: column; /* Stack portfolio items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Portfolio item specific styling */
@@ -818,7 +894,7 @@ body, html {
     width: 80%;
     max-width: 800px;
     text-align: center;
-    animation: fadeInUp 0.8s ease forwards; /* Add fade-in effect */
+    animation: fadeInUp 0.8s ease forwards;
 }
 
 /* Hover effect */
@@ -909,4 +985,5 @@ body, html {
 .youtube-button a:hover {
     box-shadow: 0 0 15px #FF0000;
 }
+
 
