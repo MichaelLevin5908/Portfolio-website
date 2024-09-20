@@ -701,15 +701,24 @@ body, html {
     left: -16px;
 }
 
-/* Content Styling */
+/* Hover effect will now apply to the content class */
 .content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border: 4px solid #1e90ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    border: 4px solid #007bff; /* Initial border color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Slower hover transitions (0.6s) */
 }
+
+/* Hover effect */
+.content:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25); /* Increase shadow on hover */
+    border-color: #800080; /* Change border color to purple on hover */
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
