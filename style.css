@@ -890,36 +890,46 @@ body, html {
     }
 }
 
+/* General Portfolio Section Styling */
+.portfolio {
+    margin-top: 100px;
+    min-height: 100vh;
+    display: block; /* Avoid using flex if animations are based on block layout */
+    background-size: 100% 100%;
+    background-position: 0 0;
+    padding: 0 80px;
+    overflow: hidden;
+    position: relative;
+    animation: portfolio-opacity 2.5s ease forwards;
+}
+
 /* Portfolio Section Container Styling */
 .portfolio .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Center with max width */
+    margin: 0 auto;    /* Center container */
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     z-index: 3;
-    perspective: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Portfolio item specific styling */
 .portfolio .portfolio-item {
     background-color: #ffffff;
     padding: 20px;
-    margin-bottom: 30px;
+    margin: 30px auto; /* Center items using auto margin */
     border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     border: 4px solid #007bff;
     transform: rotateX(3deg) rotateY(3deg);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    width: 80%;
-    max-width: 800px;
+    width: 80%;       /* Ensures responsiveness */
+    max-width: 800px; /* Limits width to 800px */
     text-align: center;
     animation: fadeInUp 0.8s ease forwards;
+    position: relative; /* Keep position relative for animations */
 }
 
 /* Hover effect */
@@ -933,7 +943,7 @@ body, html {
 .portfolio .portfolio-item img.centered-image {
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 50%;  /* Adjust width as needed */
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
