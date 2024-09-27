@@ -19,7 +19,7 @@ body, html {
 
 .Home {
     min-height: 100vh;
-    background: linear-gradient(135deg, #40E0D0, #87CEFA); /* Turquoise to soft sky blue */
+    background: linear-gradient(135deg, #B2FFFF, #D6F5FF); /* Light turquoise to baby blue */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +27,7 @@ body, html {
     padding: 0 80px;
     overflow: hidden;
 }
+
 
 
 header {
