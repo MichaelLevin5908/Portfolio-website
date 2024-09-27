@@ -45,11 +45,17 @@ header nav {
 }
 
 header nav h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 600;
-    color: #333; /* Darker text color for contrast */
-    transition: .3s;
+    font-size: 3rem; /* Adjust size as needed */
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow:
+        1px 1px 0px #a3d9d9, /* Light cyan shadow */
+        2px 2px 0px #87cefa, /* Light sky blue */
+        3px 3px 0px #5f9ea0, /* Cadet blue */
+        4px 4px 0px #4682b4; /* Steel blue for more depth */
+    transition: 0.3s ease;
 }
 
 header nav span {
